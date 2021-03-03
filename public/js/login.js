@@ -42,13 +42,3 @@ function login() {
 
 
 }
-
-function logout() {
-    const currentUser = Parse.User.current();
-    if (currentUser) {
-        // do stuff with the user
-        // redirect to inventory
-        console.log('logged out :D');
-        Parse.User.logOut();
-    }
-}

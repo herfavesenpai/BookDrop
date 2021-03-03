@@ -23,6 +23,15 @@
 </head>
 
 <body>
+	<script>
+		const currentUser = Parse.User.current();
+		if (currentUser) {
+			// do stuff with the user
+			// redirect to inventory
+			console.log('logged out :D');
+			Parse.User.logOut();
+		}
+	</script>
 	<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
 	<div>
 		<div class="nav">
